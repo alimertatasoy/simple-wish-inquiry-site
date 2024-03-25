@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Ali Mert</title>
+  <meta http-equiv="refresh" content="5;istekSorgu.html">
+  <meta charset="UTF-8"> 
+
+  <style>
+    body {
+      background-color: rgb(188, 188, 188);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      margin: 0;
+    }
+    
+    .profile {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin-right: 20px;
+    }
+    
+    .profile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    
+    .name {
+      font-size: 20px;
+      font-weight:initial;
+      text-align: center;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      position: relative;
+      margin-top: 5%;
+    }
+  </style>
+</head>
+<body>
+  <div>
+    <div class="profile">
+      <img src="profil.jpeg" alt="Profil Resmi" id="profileImage">
+    </div>
+    <div class="name" id="nameText">
+      Ali Mert
+    </div>
+  </div>
+  <script>
+    function blink(element) {
+      setInterval(function() {
+        element.style.visibility = (element.style.visibility === 'hidden') ? 'visible' : 'hidden';
+      }, 500);
+    }
+    
+    const profileImage = document.getElementById('profileImage');
+    const nameText = document.getElementById('nameText');
+    
+    blink(profileImage);
+    blink(nameText);
+  </script>
+
+</body>
+</html>
